@@ -1,0 +1,14 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "1",
+            "Effect": "Allow",
+            "Action": "dynamodb:Scan",
+            "Resource": [
+                "arn:aws:dynamodb:eu-west-3:*:table/movies",
+                "arn:aws:dynamodb:eu-west-3:*:table/movies/index/*"
+            ]
+        }
+    ]
+}
